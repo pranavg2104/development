@@ -42,6 +42,15 @@ project {
 
 object AutomationOfSicFile : BuildType({
     name = "AUTOMATION_OF_.SIC_FILE"
+    
+    steps {
+        python {
+            name = "Build"
+            command = script {
+                    content = """print("Hello")"""
+            }
+        }
+    }
 
     vcs {
         root(DslContext.settingsRoot)
