@@ -42,7 +42,10 @@ project {
 
 object AutomationOfSicFile : BuildType({
     name = "AUTOMATION_OF_.SIC_FILE"
-    
+
+    vcs {
+        root(DslContext.settingsRoot)
+    }
     steps {
         python {
             name = "Build"
@@ -50,10 +53,6 @@ object AutomationOfSicFile : BuildType({
                     content = """print("Hello")"""
             }
         }
-    }
-
-    vcs {
-        root(DslContext.settingsRoot)
     }
 
     triggers {
