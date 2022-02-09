@@ -1,5 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.githubConnection
+import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.python
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
 
 /*
